@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-area">
+            <h2>Calc</h2>
+            <input type="text" id="display" placeholder="" readonly>
+        </div>
+        <div class="button-area">
+            <div class="rows">
+                <button class="digit">7</button>
+                <button class="digit">8</button>
+                <button class="digit">9</button>
+                <button class="action" id="backspace">DEL</button>
+            </div>
+            <div class="rows">
+                <button class="digit">4</button>
+                <button class="digit">5</button>
+                <button class="digit">6</button>
+                <button class="operator" id="add">+</button>
+            </div>
+            <div class="rows">
+                <button class="digit">1</button>
+                <button class="digit">2</button>
+                <button class="digit">3</button>
+                <button class="operator" id="substract">-</button>
+            </div>
+            <div class="rows">
+                <button class="digit" id="dotbutton">.</button>
+                <button class="digit">0</button>
+                <button class="operator" id="divisoin">/</button>
+                <button class="operator" id="multiply">X</button>
+            </div>
+            <div class="rows">
+                <button class="action" id="reset">RESET</button>
+                <button id="equalto">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

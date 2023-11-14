@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #3B4664;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 600px;
+}
+
+.input-area {
+    width: 100%;
+    height: 25%;
+}
+
+.input-area h2 {
+    color: #fff;
+}
+
+.input-area input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin-top: 10px;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 12px;
+    background-color: #181F32;
+    letter-spacing: 3px;
+    text-align: right;
+    caret-color: transparent;
+}
+
+/* #display::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 10px;
+} */
+
+.button-area {
+    width: 100%;
+    height: 75%;
+    background-color: #252D44;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    row-gap: 22px;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+button {
+    display: block;
+    position: relative;
+    width: 90px;
+    height: 55px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #e6e6e6;
+    top: 1px;
+}
+
+.action:active {
+    background-color: #647299;
+    color: #455171;
+    top: 1px;
+}
+
+
+#reset,
+#equalto {
+    width: 46%;
+}
+
+.action {
+    color: #fff;
+    background-color: #647299;
+}
+
+#equalto {
+    color: #fff;
+    background-color: #D13F30;
+}
+
+#equalto:active {
+    background-color: #a62c2b;
+}
+
+@media only screen and (max-width: 460px) {
+
+    .container {
+        width: 270px;
+        height: 400px;
+    }
+
+    .button-area {
+        margin-top: 10px;
+        row-gap: 20px;
+    }
+
+    #display {
+        font-size: 30px;
+    }
+
+    button {
+        width: 50px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+}
