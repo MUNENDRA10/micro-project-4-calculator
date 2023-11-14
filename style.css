@@ -22,7 +22,7 @@ body {
 }
 
 .input-area {
-    width: 100%;
+    width: 95%;
     height: 25%;
 }
 
@@ -39,11 +39,12 @@ body {
     border: none;
     color: #fff;
     font-size: 50px;
+    padding-right: 5%;
     border-radius: 12px;
     background-color: #181F32;
     letter-spacing: 3px;
     text-align: right;
-    caret-color: transparent;
+    /* caret-color: transparent; */
 }
 
 /* #display::-webkit-inner-spin-button {
