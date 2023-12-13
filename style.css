@@ -44,13 +44,8 @@ body {
     background-color: #181F32;
     letter-spacing: 3px;
     text-align: right;
-    /* caret-color: transparent; */
+    text-transform: lowercase; 
 }
-
-/* #display::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 10px;
-} */
 
 .button-area {
     width: 100%;

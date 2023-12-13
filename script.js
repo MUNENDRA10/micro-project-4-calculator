@@ -20,7 +20,6 @@ const keyClickHandler = (event) => {
   }
 
   if (display.value.length >= 12) {
-    // Maximum 12 digits allowed
     return;
   }
 
@@ -66,7 +65,12 @@ const backspaceHandler = () => {
 
 const equalHandler = () => {
   try {
-    const result = eval(display.value);
+    const expression = display.value;
+    
+    const replacer = expression.replace(/X/g, '*');
+    
+    const result = new Function('return ' + replacer)();
+    
     display.value = result;
     lastKeyIsOperator = false;
     decimalAdded = display.value.includes(".");
@@ -74,6 +78,7 @@ const equalHandler = () => {
     alert("Invalid expression");
   }
 };
+
 
 digitKeysArray.forEach((key) => key.addEventListener("click", keyClickHandler));
 operatorKeysArray.forEach((key) => key.addEventListener("click", keyClickHandler));
