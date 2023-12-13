@@ -66,11 +66,9 @@ const backspaceHandler = () => {
 const equalHandler = () => {
   try {
     const expression = display.value;
-    
     const replacer = expression.replace(/X/g, '*');
-    
-    const result = new Function('return ' + replacer)();
-    
+    const replaced = new Function('return ' + replacer)();
+    const result = replaced % 1 === 0 ? replaced : replaced.toFixed(3);
     display.value = result;
     lastKeyIsOperator = false;
     decimalAdded = display.value.includes(".");
